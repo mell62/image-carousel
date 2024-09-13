@@ -1,4 +1,9 @@
-export { getNextPicture, getPreviousPicture, setPictureVisible };
+export {
+  getNextPicture,
+  getPreviousPicture,
+  setPictureVisible,
+  getCurrentPicture,
+};
 
 let currentPicture;
 const pictureFrames = document.querySelectorAll(".picture-frame");
@@ -11,6 +16,7 @@ function getCurrentPicture() {
     visiblePicture
   );
   currentPicture = visiblePictureIndex;
+  return currentPicture;
 }
 
 function removeAllPictures() {

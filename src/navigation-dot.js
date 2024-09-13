@@ -1,6 +1,6 @@
-import { setPictureVisible } from "./navigation-arrow";
+import { setPictureVisible, getCurrentPicture } from "./navigation-arrow";
 
-export { getPictureFromDot };
+export { getPictureFromDot, updateActiveDot };
 
 const navigationDots = document.querySelectorAll(".slide");
 const navigationDotsArray = [...navigationDots];
@@ -20,6 +20,12 @@ function applyActiveDot(dotElement) {
   removeAllActiveDots();
   const dotIndex = getDotIndex(dotElement);
   navigationDots[dotIndex].classList.add("active-slide");
+}
+
+function updateActiveDot() {
+  const index = getCurrentPicture();
+  removeAllActiveDots();
+  navigationDots[index].classList.add("active-slide");
 }
 
 function getPictureFromDot(dotElement) {
