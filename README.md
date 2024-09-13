@@ -1,3 +1,3 @@
-# Template Repo
+# Image Carousel
 
-Boo! Nothing to see here, please move on. This is just a skeletal template repo setup for my projects.
+This is just a simple image carousel portrayal project. Development in progress.
