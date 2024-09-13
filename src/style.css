@@ -31,6 +31,10 @@ body {
   height: auto;
 }
 
+.picture-frame {
+  display: none;
+}
+
 .navigation-container {
   display: flex;
   align-items: center;
@@ -76,4 +80,8 @@ body {
 .active-slide {
   transform: scale(2);
   opacity: 1;
+}
+
+.visibility {
+  display: flex;
 }
