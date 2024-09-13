@@ -1,7 +1,17 @@
-export { getNextPicture, getPreviousPicture };
+export { getNextPicture, getPreviousPicture, setPictureVisible };
 
-let currentPicture = 3;
+let currentPicture;
 const pictureFrames = document.querySelectorAll(".picture-frame");
+const pictureFramesArray = [...pictureFrames];
+
+function getCurrentPicture() {
+  const visiblePicture = document.querySelector(".visibility");
+  const visiblePictureIndex = Array.prototype.indexOf.call(
+    pictureFramesArray,
+    visiblePicture
+  );
+  currentPicture = visiblePictureIndex;
+}
 
 function removeAllPictures() {
   pictureFrames.forEach((picture) => {
@@ -11,13 +21,14 @@ function removeAllPictures() {
 
 function setPictureVisible(index) {
   removeAllPictures();
-  pictureFrames[index - 1].classList.add("visibility");
+  pictureFrames[index].classList.add("visibility");
 }
 
 function getNextPicture() {
+  getCurrentPicture();
   currentPicture += 1;
-  if (currentPicture > 5) {
-    currentPicture = 1;
+  if (currentPicture > 4) {
+    currentPicture = 0;
     setPictureVisible(currentPicture);
   } else {
     setPictureVisible(currentPicture);
@@ -25,9 +36,10 @@ function getNextPicture() {
 }
 
 function getPreviousPicture() {
+  getCurrentPicture();
   currentPicture -= 1;
-  if (currentPicture < 1) {
-    currentPicture = 5;
+  if (currentPicture < 0) {
+    currentPicture = 4;
     setPictureVisible(currentPicture);
   } else {
     setPictureVisible(currentPicture);
