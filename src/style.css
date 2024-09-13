@@ -1,0 +1,21 @@
+body {
+  background-color: #0f0e17;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.picture-strip {
+  width: 90rem;
+  height: 20rem;
+  border: 0.15rem solid #ff8906;
+  display: flex;
+  justify-content: center;
+}
+
+.picture-frame {
+  width: 18rem;
+  height: 20rem;
+  border: 0.15rem solid #e53170;
+}
