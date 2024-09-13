@@ -1,7 +1,7 @@
 import "./style.css";
 import "./modern-normalize.css";
 
-import { getNextPicture, getPreviousPicture } from "./main";
+import { getNextPicture, getPreviousPicture } from "./navigation-arrow";
 
 document.addEventListener("click", (event) => {
   if (event.target.classList.contains("left-arrow")) {
