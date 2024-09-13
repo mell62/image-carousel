@@ -1,6 +1,8 @@
 body {
   background-color: #0f0e17;
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -38,4 +40,33 @@ body {
 .navigation {
   width: 3rem;
   height: auto;
+}
+
+.slides-tracker {
+  width: 9rem;
+  height: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  height: 0.5rem;
+  width: 0.5rem;
+  cursor: pointer;
+  opacity: 0.5;
+  background-color: #ff8906;
+  border-radius: 50%;
+  transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+}
+
+.slide:hover {
+  transform: scale(2);
+  opacity: 1;
+}
+
+.active-slide {
+  transform: scale(2);
+  opacity: 1;
 }
