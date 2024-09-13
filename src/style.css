@@ -4,25 +4,26 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow: hidden;
 }
 
 .picture-strip {
-  width: 95rem;
-  height: 28rem;
+  width: 120rem;
+  height: 35.5rem;
   border: 0.15rem solid #ff8906;
   display: flex;
   justify-content: center;
 }
 
 .picture-frame {
-  width: 19rem;
-  height: 28rem;
+  width: 24rem;
+  height: 35.5rem;
   border: 0.15rem solid #e53170;
   display: flex;
   align-items: center;
 }
 
 .picture {
-  width: 19rem;
+  width: 24rem;
   height: auto;
 }
