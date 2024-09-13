@@ -9,10 +9,15 @@ body {
   overflow: hidden;
 }
 
+.hero {
+  color: #ff8906;
+  font-family: "Matemasie", sans-serif;
+  font-size: 3rem;
+}
+
 .picture-strip {
   width: 155rem;
   height: 35.5rem;
-  border: 0.15rem solid #ff8906;
   display: flex;
   justify-content: center;
 }
@@ -20,7 +25,6 @@ body {
 .picture-frame {
   width: 31rem;
   height: 35.5rem;
-  border: 0.15rem solid #e53170;
   display: flex;
   align-items: center;
   gap: 0.5rem;
