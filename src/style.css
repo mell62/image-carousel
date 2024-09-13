@@ -8,7 +8,7 @@ body {
 }
 
 .picture-strip {
-  width: 120rem;
+  width: 155rem;
   height: 35.5rem;
   border: 0.15rem solid #ff8906;
   display: flex;
@@ -16,14 +16,26 @@ body {
 }
 
 .picture-frame {
-  width: 24rem;
+  width: 31rem;
   height: 35.5rem;
   border: 0.15rem solid #e53170;
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 
 .picture {
   width: 24rem;
+  height: auto;
+}
+
+.navigation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation {
+  width: 3rem;
   height: auto;
 }
