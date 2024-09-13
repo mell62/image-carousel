@@ -7,15 +7,22 @@ body {
 }
 
 .picture-strip {
-  width: 90rem;
-  height: 20rem;
+  width: 95rem;
+  height: 28rem;
   border: 0.15rem solid #ff8906;
   display: flex;
   justify-content: center;
 }
 
 .picture-frame {
-  width: 18rem;
-  height: 20rem;
+  width: 19rem;
+  height: 28rem;
   border: 0.15rem solid #e53170;
+  display: flex;
+  align-items: center;
+}
+
+.picture {
+  width: 19rem;
+  height: auto;
 }
