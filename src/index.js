@@ -3,6 +3,7 @@ import "./modern-normalize.css";
 
 import { getNextPicture, getPreviousPicture } from "./navigation-arrow";
 import { getPictureFromDot, updateActiveDot } from "./navigation-dot";
+import { autoNextPicture } from "./auto-navigate";
 
 document.addEventListener("click", (event) => {
   if (event.target.classList.contains("left-arrow")) {
@@ -23,3 +24,5 @@ document.addEventListener("click", (event) => {
     getPictureFromDot(event.target);
   }
 });
+
+autoNextPicture();
